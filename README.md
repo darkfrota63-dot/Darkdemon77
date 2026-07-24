@@ -173,7 +173,7 @@ Gui.Parent = targetParent
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local Main = Instance.new("Frame")
-Main.Size = UDim2.new(0, 330, 0, 399)
+Main.Size = UDim2.new(0, 360, 0, 300)
 Main.Position = UDim2.new(0.5, -165, 0.5, -232)
 Main.BackgroundColor3 = C.bg
 Main.BorderSizePixel = 0
@@ -229,7 +229,7 @@ for i, name in ipairs(tabNames) do
     end
 
     local cont = Instance.new("ScrollingFrame")
-    cont.Size = UDim2.new(1, -40, 0, 370)
+    cont.Size = UDim2.new(1, -40, 0, 210)
     cont.Position = UDim2.new(0, 20, 0, 75)
     cont.BackgroundTransparency = 1
     cont.ScrollBarThickness = 2
@@ -1764,7 +1764,7 @@ NFBtn.MouseButton1Click:Connect(function()
         Main.Visible = true
         Main.Size = UDim2.new(0, 0, 0, 0)
         
-        local openTween = TS:Create(Main, TweenInfo.new(0.65, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out), {Size = UDim2.new(0, 330, 0, 399)})
+        local openTween = TS:Create(Main, TweenInfo.new(0.65, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out), {Size = UDim2.new(0, 360, 0, 300)})
         openTween:Play()
         
         openTween.Completed:Connect(function()
